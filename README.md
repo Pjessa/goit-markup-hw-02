@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-Homework 30.04.22 HTML M1
+# goit-markup-hw-02
+Homework 08.04.22 HTML M2
