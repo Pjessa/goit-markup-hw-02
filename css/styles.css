@@ -184,3 +184,34 @@ body {
 .footer-link:focus {
     color: #2196f3;
 }
+
+/* --------------ПОРТФОЛИО--------------- */
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: #2196f3;
+}
+
+.works-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.works-text {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
