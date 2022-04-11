@@ -1,33 +1,14 @@
 :root {
     --main-color: #212121;
     --secondary-color: #757575;
-    --menu-color: #212121;
-    --contacts-color: #757575;
     --hero-title-color: #ffffff;
-    --hero-btn-color: #212121;
-    --list-title-color: #212121;
-    --list-text-color: #757575;
-    --gallery-title-color: #212121;
-    --team-title-main-color: #212121;
-    --team-title-color: #212121;
-    --team-text-color: #757575;
-    --footer-link-color: #ffffff;
     --footer-item-color: rgba(255, 255, 255, 0.6);
     --logo-color: #2196f3;
-    --logo-header-color: #212121;
     --hero-background-color: #2f303a;
-    --footer-background-color: #2f303a;
-    --logo-footer-color: #ffffff;
-    --button-text-color: #212121;
     --button-background-color: #f5f4fa;
-    --portfolio-btn-color: #ffffff;
-    --portfolio-btn-background-color: #2196f3;
-    --works-title-color: #212121;
-    --works-text-color: #757575;
+    --button-background-hover: #188ce8;
 }
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Oleo Script', cursive;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -54,31 +35,31 @@ body {
     text-align: center;
 }
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--logo-color);
 }
 .logo-header {
-    color: var(--logo-header-color);
+    color: var(--main-color);
 }
 .menu-item {
-    color: var(--menu-color);
+    color: var(--main-color);
 }
 .menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--menu-color);
+    color: var(--main-color);
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: #2196f3;
+    color: var(--logo-color);
 }
 .contacts-item {
-    color: var(--contacts-color);
+    color: var(--secondary-color);
 }
 .contacts-link {
     font-style: normal;
@@ -86,11 +67,11 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--contacts-color);
+    color: var(--secondary-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
-    color: #2196f3;
+    color: var(--logo-color);
 }
 .hero {
     background-color: var(--hero-background-color);
@@ -111,11 +92,12 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color: var(--hero-btn-color);
+    color: var(--hero-title-color);
+    background-color: var(--logo-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #2196f3;
+    background-color: var(--button-background-hover);
 }
 .visually-hidden {
     position: absolute;
@@ -134,43 +116,43 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--list-title-color);
+    color: var(--main-color);
 }
 .list-text {
     font-size: 14px;
     line-height: 1.71;
-    color: var(--list-text-color);
+    color: var(--secondary-color);
 }
 .gallery-title {
-    color: var(--gallery-title-color);
+    color: var(--main-color);
 }
 .team-title-main {
-    color: var(--team-title-main-color);
+    color: var(--main-color);
 }
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--team-title-color);
+    color: var(--main-color);
 }
 .team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--team-text-color);
+    color: var(--secondary-color);
 }
 .footer {
-    background-color: var(--footer-background-color);
+    background-color: var(--hero-background-color);
 }
 .logo-footer {
-    color: var(--logo-footer-color);
+    color: var(--hero-title-color);
 }
 .footer-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--footer-link-color);
+    color: var(--hero-title-color);
 }
 .footer-item {
     font-size: 14px;
@@ -179,7 +161,7 @@ body {
 }
 .footer-link:hover,
 .footer-link:focus {
-    color: #2196f3;
+    color: var(--logo-color);
 }
 .portfolio-btn {
     font-family: inherit;
@@ -187,23 +169,27 @@ body {
     font-size: 16px;
     line-height: 1.63;
     cursor: pointer;
-    color: var(--button-text-color);
-    background-color: var(--button-background-color);
+    color: var(--main-color);
+    background-color: var(--hero-title-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    color: var(--portfolio-btn-color);
-    background-color: var(--portfolio-btn-background-color);
+    color: var(--hero-title-color);
+    background-color: var(--logo-color);
 }
 .works-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--works-title-color);
+    color: var(--main-color);
 }
 .works-text {
     font-size: 16px;
-    line-height: 30px;
-    color: var(--works-text-color);
+    line-height: 1.88;
+    color: var(--secondary-color);
+}
+
+.current {
+    color: var(--logo-color);
 }
